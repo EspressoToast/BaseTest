@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">BaseDemo</string>
+    <string name="title">标题</string>
+    <string name="left_text">左</string>
+    <string name="right_text">右</string>
+    <string name="very_right_text">最右</string>
+</resources>

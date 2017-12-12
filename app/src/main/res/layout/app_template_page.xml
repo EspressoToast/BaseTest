@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+    >
+
+    <!-- 标题栏 -->
+    <RelativeLayout
+        android:id="@+id/id_title_bar"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="#FFFFFF">
+        <!-- 返回按钮 -->
+        <TextView
+            android:id="@+id/title_back"
+            android:layout_width="wrap_content"
+            android:layout_height="44dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center"
+            android:background="@null"
+            android:drawableLeft="@drawable/app_title_back_selector"
+            android:gravity="center_vertical"
+            android:paddingLeft="12dp"
+            android:paddingRight="7dp"
+            android:singleLine="true"
+            android:textColor="#333333"
+            android:textSize="16dp"
+            android:visibility="invisible"/>
+        <!-- 标题 -->
+        <TextView
+            android:id="@+id/title_txt"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:paddingLeft="80dp"
+            android:paddingRight="80dp"
+            android:singleLine="true"
+            android:textColor="#333333"
+            android:textSize="18dp"/>
+
+        <!-- 首页按钮 -->
+        <TextView
+            android:id="@+id/title_right"
+            android:layout_width="wrap_content"
+            android:layout_height="44dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:background="@null"
+            android:drawableLeft="@mipmap/shortcut_more"
+            android:gravity="center_vertical"
+            android:paddingRight="12dp"
+            android:textColor="#333333"
+            android:textSize="16dp"
+            android:visibility="invisible"/>
+
+        <TextView
+            android:id="@+id/title_sub_right"
+            android:layout_width="wrap_content"
+            android:layout_height="44dp"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@id/title_right"
+            android:background="@null"
+            android:gravity="center_vertical"
+            android:textColor="#333333"
+            android:textSize="16dp"
+            android:visibility="invisible"/>
+
+        <ImageView
+            android:id="@+id/id_title_divider"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_alignParentBottom="true"
+            android:background="#666666"
+            android:visibility="gone"/>
+    </RelativeLayout>
+
+
+    <!-- 底部按钮 -->
+    <LinearLayout
+        android:id="@+id/layout_live_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="#333333"
+        android:gravity="center_vertical"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/tv_comment"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:drawableLeft="@drawable/app_title_back_selector"
+            android:gravity="center_vertical"
+            android:textColor="#333333"
+            android:textSize="12dp"
+            android:visibility="gone"/>
+
+
+        <ImageView
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="8dp"
+            android:layout_marginTop="8dp"
+            android:background="#333333"/>
+
+        <ImageView
+            android:id="@+id/iv_share"
+            android:layout_width="44dp"
+            android:layout_height="44dp"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/app_title_share_selector"
+            android:visibility="gone"/>
+    </LinearLayout>
+
+    <!-- 主内容框架 -->
+    <LinearLayout
+        android:id="@+id/llContent1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/layout_live_info"
+        android:layout_below="@id/id_title_bar"
+        android:orientation="vertical"/>
+
+
+</RelativeLayout>
