@@ -1,4 +1,4 @@
-package com.example.ljw.basedemo;
+package com.example.ljw.basedemo.utils;
 
 import android.app.Activity;
 import android.content.Context;
